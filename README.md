@@ -10,6 +10,7 @@ Link to dataset: https://drive.google.com/file/d/1YFp7N1pu6KJnf_rAXeBHR0D-xgNybT
 - MySQL (Or any database of your choice)
 - Flask
 - SQLAlchemy
+  
 ### Create table and fill data
 In your preferred database add this query to create the dataset table: \
 CREATE TABLE dataset ( \
@@ -24,34 +25,34 @@ CREATE TABLE dataset ( \
 
 ### Filling up the table
 Fill upp the table by running the dataFILL.py file \
-python dataFILL.py \
+python dataFILL.py 
 
 ### Run the flask app to bring the api live.
 Run by writing this code in terminal and press enter. \
-python apiBuilder.py \
+python apiBuilder.py 
 
 API Documentation \
 Retrieve Dataset \
-Endpoint: /api/dataset \
+Endpoint: /api/dataset 
 
-Method: GET \
+Method: GET 
 
-Parameters: \
+Parameters: 
 
 wallet_address (String): The wallet address to query. \
 from_date (String): The start date of the date range (format: 'YYYY-MM-DD'). \
-to_date (String): The end date of the date range (format: 'YYYY-MM-DD'). \
+to_date (String): The end date of the date range (format: 'YYYY-MM-DD'). 
 
-"http://localhost:5000/api/dataset?wallet_address=0x1155b614971f16758c92c4890ed338c9e3ede6b7&from_date=2024-01-29&to_date=2024-02-29" \
+"http://localhost:5000/api/dataset?wallet_address=0x1155b614971f16758c92c4890ed338c9e3ede6b7&from_date=2024-01-29&to_date=2024-02-29" 
 
 Sample response: \
 [ \
-  { \
-    "wallet_address": "0x1155b614971f16758c92c4890ed338c9e3ede6b7", \
-    "from_date": "2024-01-29", \
-    "to_date": "2024-02-29", \
-    "total_points": 123.45 \
-  } \
+      { \
+        "wallet_address": "0x1155b614971f16758c92c4890ed338c9e3ede6b7", \
+        "from_date": "2024-01-29", \
+        "to_date": "2024-02-29", \
+        "total_points": 123.45 \
+      } \
 ] 
 
 

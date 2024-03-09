@@ -3,7 +3,7 @@
 This project is a Flask application that exposes a REST API to make a dataset accessible. The dataset is stored in a MySQL database, and the API provides endpoints to retrieve information based on wallet addresses and date ranges.
 
 ## Getting Started
-Link to dataset: https://drive.google.com/file/d/1YFp7N1pu6KJnf_rAXeBHR0D-xgNybTvq/view?usp=sharing  \
+Link to dataset: https://drive.google.com/file/d/1YFp7N1pu6KJnf_rAXeBHR0D-xgNybTvq/view?usp=sharing  
 ### Prerequisites
 
 - Python 3.x
@@ -20,7 +20,7 @@ CREATE TABLE dataset ( \
     year INTEGER, \
     month INTEGER, \
     day INTEGER \
-); \
+); 
 
 ### Filling up the table
 Fill upp the table by running the dataFILL.py file \
@@ -52,6 +52,6 @@ Sample response: \
     "to_date": "2024-02-29", \
     "total_points": 123.45 \
   } \
-] \
+] 
 
 

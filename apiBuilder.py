@@ -35,7 +35,6 @@ def get_dataset():
         Dataset.day
     ).all()
 
-    # Format the response
     response_data = [{
         'wallet_address': row.wallet_address,
         'from_date': from_date,
